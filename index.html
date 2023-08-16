@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/staly.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="container-fluid bg-body-primary bg-body-secondary">
+      <!-- --------------------------------------------------------NAVBAR -->
+
+      <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
+
+      <nav class="container navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#"><img src="#" alt="LO" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end align-content-sm-center gap-3"
+            id="navbarNav"
+          >
+            <button type="button" class="btn btn-primary px-3">
+              Contato
+            </button>
+            <button type="button" class="btn btn-primary px-3">
+              Contato
+            </button>
+            <button type="button" class="btn btn-primary px-3">
+              Contato
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ------------------------------------------------CARROSSEL -->
+
+    <!-- foi usado data-bs-interval="2500" para definir o tempo de exibição dos slides -->
+
+    <section class="container-fluid mb-3 py-2">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2500">
+            <img
+              src="image/Carrossel/cafe_manha.jpeg"
+              class="d-block w-100"
+              alt="imagem de cafe da manha"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="image/Carrossel/cama.jpeg"
+              class="d-block w-100"
+              alt="imagem de um quarto de hotel"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="image/Carrossel/pet.jpeg"
+              class="d-block w-100"
+              alt="imagem de um cachorro"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              src="image/Carrossel/wifi.jpeg"
+              class="d-block w-100"
+              alt="imagme das comodidades"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------Filtro de pesquisa -->
+
+    <!-- <section class="container rounded-pill border border-info py-4 form-control">
+      <form class="container-fluid mx-5 d-flex justify-content-around text-center">
+
+        <div class="col-auto">
+            <label class="form-label">Entrada</label>
+            <input type="date" class="form-control rounded-pill shadow-sm" id="entrada">
+        </div>
+
+        <div class="col-auto">
+            <label class="form-label">Saída</label>
+            <input type="date" class="form-control rounded-pill shadow-sm" id="saida">
+
+        </div>
+
+        <div class="col-1">
+            <label class="form-label">Adultos</label>
+            <input type="number" class="form-control rounded-pill shadow-sm" id="adultos">
+        </div>
+
+        <div class="col-1">
+            <label class="form-label">Crianças</label>
+            <input type="number" class="form-control rounded-pill shadow-sm" id="">
+        </div>
+
+        <div class="col-1">
+            <label class="form-label">Quartos</label>
+            <input type="number" name="nquartos" id="nquartos" class="form-control rounded-pill shadow-sm" min="1" max="6">
+        </div>
+
+        <div class="col-auto">
+            <div class="align-content-center">
+                <label class="form-check-label">Pet</label>
+                <input class="form-check-input form-control" type="checkbox" id="pet">
+            </div>
+        </div>
+   
+        
+      </form>
+    </section> -->
+
+
+                      <!-- ---------------------------------------------------------------- ARTIGO -->
+
+     <main class="container-fluid">
+
+      <article class="container d-flex gap-3">
+
+        <div class="container col-lg-8 d-flex text-start">
+          <div class="lead">
+            <img src="image/main/imagem_linha.jpg" alt="imagem de do pordo sol do hotel" class="mb-4 img-fluid">
+            <h3 class="mb-3">Nosso Hotel: O Refúgio Perfeito para Famílias e Seus Adoráveis Pets!</h3>
+            <small>Embarquem em uma jornada única de férias no Nosso Hotel, onde a alegria das suas férias encontra o aconchego de um lar. Aqui, abraçamos não apenas você, mas também os seus companheiros peludos de quatro patas. Das nossas acomodações confortáveis às atividades emocionantes, cada detalhe foi cuidadosamente elaborado para garantir que cada membro da sua família, incluindo aqueles de caudas fofas, tenha uma estadia inesquecível. Estamos ansiosos para criar momentos especiais juntos!</small>
+          </div>
+
+        </div>
+
+                          <!-- --------------------------------------------------Filtro de pesquisa -->
+
+                          
+
+        <div class="container fundo p-4 rounded-4">
+          <form >
+            <div class="form-floating mb-3">
+              <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Entrada</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="date" class="form-control" id="" placeholder="">
+              <label for="floatingPassword">Saída</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="irresponsaveis" placeholder="">
+              <label for="floatingPassword" min="1" max="10">N° de Adultos</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="pirralhos" placeholder="">
+              <label for="floatingPassword">N° de Crianças</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="" placeholder="">
+              <label for="floatingPassword">N° de Quartos</label>
+            </div>
+            <div class="bg-light w-25 rounded-pill mb-3">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">Pets</label>
+              </div>
+            </div>
+            <div class="container">
+              <button class="btn btn-danger w-100" type="submit">Pesquisar</button>
+            </div>
+
+
+
+          </form>
+        </div>
+      </article>
+
+     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
