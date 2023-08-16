@@ -8,14 +8,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/staly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <title>Document</title>
   </head>
 
-  <body>
+  <body class="fundo2">
     <!-- NAVBAR -->
 
-    <header class="container-fluid bg-body-primary bg-body-secondary">
+    <header class="container-fluid bg-body-primary fundo py-3">
       <!-- --------------------------------------------------------NAVBAR -->
 
       <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
@@ -38,15 +42,9 @@
             class="collapse navbar-collapse justify-content-end align-content-sm-center gap-3"
             id="navbarNav"
           >
-            <button type="button" class="btn btn-primary px-3">
-              Contato
-            </button>
-            <button type="button" class="btn btn-primary px-3">
-              Contato
-            </button>
-            <button type="button" class="btn btn-primary px-3">
-              Contato
-            </button>
+            <button type="button" class="btn btn-primary px-3">Contato</button>
+            <button type="button" class="btn btn-primary px-3">Contato</button>
+            <button type="button" class="btn btn-primary px-3">Contato</button>
           </div>
         </div>
       </nav>
@@ -56,7 +54,7 @@
 
     <!-- foi usado data-bs-interval="2500" para definir o tempo de exibição dos slides -->
 
-    <section class="container-fluid mb-3 py-2">
+    <section class="container-fluid mb-5 py-2 shadow">
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -113,118 +111,140 @@
       </div>
     </section>
 
-    <!-- --------------------------------------------------Filtro de pesquisa -->
+    <!-- ----------------------------------------------------------------- MAIN -->
 
-    <!-- <section class="container rounded-pill border border-info py-4 form-control">
-      <form class="container-fluid mx-5 d-flex justify-content-around text-center">
+    <!-- ---------------------------------------------------------------- ARTIGO -->
 
-        <div class="col-auto">
-            <label class="form-label">Entrada</label>
-            <input type="date" class="form-control rounded-pill shadow-sm" id="entrada">
-        </div>
-
-        <div class="col-auto">
-            <label class="form-label">Saída</label>
-            <input type="date" class="form-control rounded-pill shadow-sm" id="saida">
-
-        </div>
-
-        <div class="col-1">
-            <label class="form-label">Adultos</label>
-            <input type="number" class="form-control rounded-pill shadow-sm" id="adultos">
-        </div>
-
-        <div class="col-1">
-            <label class="form-label">Crianças</label>
-            <input type="number" class="form-control rounded-pill shadow-sm" id="">
-        </div>
-
-        <div class="col-1">
-            <label class="form-label">Quartos</label>
-            <input type="number" name="nquartos" id="nquartos" class="form-control rounded-pill shadow-sm" min="1" max="6">
-        </div>
-
-        <div class="col-auto">
-            <div class="align-content-center">
-                <label class="form-check-label">Pet</label>
-                <input class="form-check-input form-control" type="checkbox" id="pet">
-            </div>
-        </div>
-   
-        
-      </form>
-    </section> -->
-
-
-                      <!-- ---------------------------------------------------------------- ARTIGO -->
-
-     <main class="container-fluid">
-
-      <article class="container d-flex gap-3">
-
-        <div class="container col-lg-8 d-flex text-start">
-          <div class="lead">
-            <img src="image/main/imagem_linha.jpg" alt="imagem de do pordo sol do hotel" class="mb-4 img-fluid">
-            <h3 class="mb-3">Nosso Hotel: O Refúgio Perfeito para Famílias e Seus Adoráveis Pets!</h3>
-            <small>Embarquem em uma jornada única de férias no Nosso Hotel, onde a alegria das suas férias encontra o aconchego de um lar. Aqui, abraçamos não apenas você, mas também os seus companheiros peludos de quatro patas. Das nossas acomodações confortáveis às atividades emocionantes, cada detalhe foi cuidadosamente elaborado para garantir que cada membro da sua família, incluindo aqueles de caudas fofas, tenha uma estadia inesquecível. Estamos ansiosos para criar momentos especiais juntos!</small>
+    <main class="container-fluid mb-5 p-5">
+      <article class="container-fluid d-flex">
+        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3">
+          <div class="container-fluid lead">
+            <img
+              src="image/main/imagem_linha.jpg"
+              alt="imagem de do pordo sol do hotel"
+              class="mb-3 w-100 rounded-5 rounded-top-1 shadow border border-warning-subtle"
+            />
+            <h1 class="mb-4 text-center px-5">
+              O Refúgio Perfeito para sua Famílias e Seus Adoráveis Pets!
+            </h1>
+            <p class="px-3 lead text-center"
+              >Embarquem em uma jornada única de férias no Nosso Hotel, onde a
+              alegria das suas férias encontra o aconchego de um lar. Aqui, abraçamos
+              não apenas você, mas também os seus companheiros peludos
+              de quatro patas. Das nossas acomodações confortáveis às atividades
+              emocionantes, cada detalhe foi cuidadosamente elaborado para
+              garantir que cada membro da sua família, incluindo aqueles de
+              caudas fofas, tenha uma estadia inesquecível. Estamos ansiosos
+              para criar momentos especiais juntos!</p
+            >
           </div>
-
         </div>
 
-                          <!-- --------------------------------------------------Filtro de pesquisa -->
+        <!-- --------------------------------------------------Filtro de pesquisa -->
 
-                          
-
-        <div class="container fundo p-4 rounded-4">
-          <form >
+        <div class="container col-lg-4 fundo p-4 rounded-4 shadow">
+          <form>
             <div class="form-floating mb-3">
-              <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input
+                type="date"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
               <label for="floatingInput">Entrada</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="date" class="form-control" id="" placeholder="">
+              <input type="date" class="form-control" id="" placeholder="" />
               <label for="floatingPassword">Saída</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="number" class="form-control" id="irresponsaveis" placeholder="">
-              <label for="floatingPassword" min="1" max="10">N° de Adultos</label>
+              <input
+                type="number"
+                class="form-control"
+                id="irresponsaveis"
+                placeholder=""
+              />
+              <label for="floatingPassword" min="1" max="10"
+                >N° de Adultos</label
+              >
             </div>
             <div class="form-floating mb-3">
-              <input type="number" class="form-control" id="pirralhos" placeholder="">
+              <input
+                type="number"
+                class="form-control"
+                id="pirralhos"
+                placeholder=""
+              />
               <label for="floatingPassword">N° de Crianças</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="number" class="form-control" id="" placeholder="">
+              <input type="number" class="form-control" id="" placeholder="" />
               <label for="floatingPassword">N° de Quartos</label>
             </div>
-            <div class="bg-light w-25 rounded-pill mb-3">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                <label class="form-check-label" for="flexSwitchCheckChecked">Pets</label>
+
+            <div class="form-floating mb-3">
+              <div class="bg-light w-25 rounded-pill mb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >Pets</label
+                  >
+                </div>
               </div>
             </div>
+
             <div class="container">
-              <button class="btn btn-danger w-100" type="submit">Pesquisar</button>
+              <button class="btn btn-danger w-100" type="submit">
+                Pesquisar
+              </button>
             </div>
-
-
-
           </form>
         </div>
       </article>
 
-     </main>
+    </main>
 
+    <footer class="container-fluid p-5 fundo">
+      <section class="container d-flex justify-content-between">
+        <small class="text-white text-center mt-2 mx-3"
+          >Todos os direitos reservados &copy; 2023</small
+        >
 
+        <!---------------------------------------------- ÍCONES REDES SOCIAIS -->
 
-
-
-
-
-
-
-
-
+        <div class="fs-4 d-flex gap-4">
+          <a href="https://www.youtube.com/" target="_blank" class="text-white"
+            ><i class="fa-brands fa-youtube tube"></i
+          ></a>
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2F"
+            target="_blank"
+            class="text-white"
+            ><i class="fa-brands fa-twitter twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="text-white"
+            ><i class="fa-brands fa-instagram insta"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/pt-BR/"
+            target="_blank"
+            class="text-white"
+            ><i class="fa-brands fa-tiktok tiktok"></i
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank" class="text-white"
+            ><i class="fa-brands fa-facebook face"></i
+          ></a>
+        </div>
+      </section>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

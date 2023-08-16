@@ -5,3 +5,33 @@
 .fundo {
     background-color: sienna;
 }
+.fundo2 {
+    background-color: rgb(207, 169, 151);
+}
+
+/* ----------------------- REDES SOCIAIS */
+
+.tube:hover {
+    color: rgb(255, 0, 0);
+}
+
+.twitter:hover {
+    color: rgb(46, 187, 243);
+    
+}
+
+.insta:hover {
+    color: rgb(245, 47, 218);
+}
+
+.tiktok:hover {
+    color: rgb(2, 2, 2);
+}
+
+.face:hover {
+    color: rgb(26, 88, 223);
+}
+
+.grupo:active {
+    background-color: rgb(91, 135, 202);
+}
