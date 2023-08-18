@@ -17,6 +17,7 @@
   </head>
 
   <body class="fundo2">
+
     <!-- NAVBAR -->
 
     <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
@@ -113,16 +114,19 @@
 
     <!-- ----------------------------------------------------------------- MAIN -->
 
-    <!-- ---------------------------------------------------------------- ARTIGO -->
+   
 
-    <main class="col-lg-11 container-fluid ">
-      <article class="d-flex flex-md-column flex-column flex-lg-row gap-md-5">
-        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3 order-md-2 order-lg-1">
-          <div class="container-fluid lead">
+    <main class="container-fluid col-10">
+
+      <!-- ---------------------------------------------------------------- ARTIGO -->
+
+      <article class="d-flex flex-md-column flex-column gap-4 flex-lg-row">
+        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3 order-md-2 order-2 order-lg-1">
+          <div class="lead">
             <img
               src="image/main/imagem_linha.jpg"
               alt="imagem de do pordo sol do hotel"
-              class="mb-3 w-100 rounded-5 rounded-top-1 shadow border border-warning-subtle"
+              class="w-100 rounded-5 rounded-top-1 shadow border border-warning-subtle"
             />
             <h1 class="mb-4 text-center px-5">
               O Refúgio Perfeito para sua Famílias e Seus Adoráveis Pets!
@@ -142,8 +146,8 @@
 
         <!-- --------------------------------------------------Filtro de pesquisa -->
 
-        <div class="container col-lg-4 fundo p-4 rounded-4 order-md-1 order-lg-2 shadow">
-          <form class="mt-4">
+        <div class="container col-lg-4 fundo p-4 rounded-4 order-md-1 order-lg-2 order-1 shadow">
+          <form class="mt-4 gap-5">
             <div class="form-floating mb-4">
               <input
                 type="date"
@@ -182,25 +186,25 @@
               <label for="floatingPassword">N° de Quartos</label>
             </div>
 
-            <div class="form-floating mb-4">
-              <div class="mb-3">
-                <div class="form-check form-switch">
+           
+              <div class="form-control mb-3 d-flex justify-content-between align-content-center">
+                <label class="form-label" for="flexSwitchCheckChecked">Pets</label>
+                <div class="form-switch d-flex align-content-center">
+                  
                   <input
                     class="form-check-input"
                     type="checkbox"
                     role="switch"
                     id="flexSwitchCheckChecked"
                   />
-                  <label class="form-check-label" for="flexSwitchCheckChecked"
-                    >Pets</label
-                  >
+                  
                 </div>
               </div>
-            </div>
+            
 
-            <div class="container">
-              <button class="btn btn-danger w-100" type="submit">
-                Pesquisar
+            <div class="container mt-4">
+              <button class="btn btn-secondary w-100" type="submit">
+                  <a href="pages/reserva.html" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Pesquisar</a>
               </button>
             </div>
           </form>
@@ -212,15 +216,15 @@
 
     <!-- --------------------------------------------------------CARDS -->
 
-    <section class="container my-5">
+    <section class="my-5">
 
-      <div class="row row-cols-1 row-cols-md-10 gap-md-5 gap-5">
-        <div class="">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div class="col-10 col-md-3  col-sm-10">
           <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia1.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
-              <h5 class="card-title px-3">Família Silva</h5>
-              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>O Hotel superou todas as nossas expectativas para uma escapada em família. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e atividades para todas as idades. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
+              <h5 class="card-title px-3">Família Albuquerque</h5>
+              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>O Hotel superou todas as nossas expectativas. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e atividades para todas as idades. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
             </div>
             <div class="rating text-center">
               <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
@@ -229,7 +233,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-10 col-md-3 col-sm-3  col-sm-10">
           <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia2.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
@@ -243,7 +247,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-10 col-md-3 col-sm-3  col-sm-10">
           <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia3.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
@@ -256,7 +260,7 @@
             </div>
           </div>
         </div>
-
+      </div>
     </section>
 
 
