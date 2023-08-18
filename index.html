@@ -19,7 +19,7 @@
   <body class="fundo2">
     <!-- NAVBAR -->
 
-    <header class="container-fluid bg-body-primary fundo py-3">
+    <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
       <!-- --------------------------------------------------------NAVBAR -->
 
       <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
@@ -54,7 +54,7 @@
 
     <!-- foi usado data-bs-interval="2500" para definir o tempo de exibição dos slides -->
 
-    <section class="container-fluid mb-5 py-2 shadow">
+    <section class="container-fluid mb-5 py-4 shadow">
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -115,9 +115,9 @@
 
     <!-- ---------------------------------------------------------------- ARTIGO -->
 
-    <main class="container-fluid p-5">
-      <article class="container-fluid d-flex">
-        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3">
+    <main class="col-lg-11 container-fluid ">
+      <article class="d-flex flex-md-column flex-column flex-lg-row gap-md-5">
+        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3 order-md-2 order-lg-1">
           <div class="container-fluid lead">
             <img
               src="image/main/imagem_linha.jpg"
@@ -142,7 +142,7 @@
 
         <!-- --------------------------------------------------Filtro de pesquisa -->
 
-        <div class="container col-lg-4 fundo p-4 rounded-4 shadow">
+        <div class="container col-lg-4 fundo p-4 rounded-4 order-md-1 order-lg-2 shadow">
           <form class="mt-4">
             <div class="form-floating mb-4">
               <input
@@ -214,13 +214,13 @@
 
     <section class="container my-5">
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <div class="row row-cols-1 row-cols-md-10 gap-md-5 gap-5">
+        <div class="">
+          <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia1.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
-              <h5 class="card-title px-3">Card title</h5>
-              <p class="card-text px-3">O Hotel superou todas as nossas expectativas para uma escapada em família. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e atividades para todas as idades. Mal podemos esperar para voltar!</p>
+              <h5 class="card-title px-3">Família Silva</h5>
+              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>O Hotel superou todas as nossas expectativas para uma escapada em família. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e atividades para todas as idades. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
             </div>
             <div class="rating text-center">
               <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
@@ -230,11 +230,11 @@
         </div>
 
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia2.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
-              <h5 class="card-title px-3">Card title</h5>
-              <p class="card-text px-3">This is a short card.</p>
+              <h5 class="card-title px-3">Família Monteiro</h5>
+              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Tivemos férias incríveis no Hotel Pet-Friendly! Quartos espaçosos para a família e nossos pets, equipe super atenciosa. Áreas para pets, piscinas e diversão para todos. Com certeza voltaremos!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
             </div>
             <div class="rating text-center">
               <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
@@ -244,11 +244,11 @@
         </div>
 
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 rounded-5 rounded-top-1 shadow">
             <img src="image/cards/familia3.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
             <div class="card-body">
-              <h5 class="card-title px-3">Card title</h5>
-              <p class="card-text px-3">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title px-3">Família Carvalho</h5>
+              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Estadia memorável! Quartos aconchegantes, estrutura com áreas verdes para atividades com os animais. Hospedagem perfeita para famílias que amam seus pets. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
             </div>
             <div class="rating text-center">
               <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
@@ -257,7 +257,7 @@
           </div>
         </div>
 
-      </section>
+    </section>
 
 
 
@@ -266,7 +266,7 @@
 
 
 
-    <footer class="container-fluid p-5 fundo">
+    <footer class="container-fluid p-5 border-top fundo border-warning">
       <section class="container d-flex justify-content-between">
         <small class="text-white text-center mt-2 mx-3"
           >Todos os direitos reservados &copy; 2023</small
