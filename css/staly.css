@@ -1,5 +1,5 @@
 .borda {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .fundo {
@@ -18,16 +18,13 @@
 }
 
 .linha {
-    color: sienna;
+    color: rgb(139, 60, 24);
 }
 
 .fonte {
     font-size: 14px;
 }
 
-.aprovado {
-    font-weight: ;
-}
 
 /* ----------------------- REDES SOCIAIS */
 
