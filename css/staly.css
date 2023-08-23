@@ -5,6 +5,7 @@
 .fundo {
     background-color: sienna;
 }
+
 .fundo2 {
     background-color: rgb(207, 169, 151);
 }
@@ -25,6 +26,16 @@
     font-size: 14px;
 }
 
+.fonte2 {
+    font-size: 40px;
+}
+
+.fonte3 {
+    font-size: 150px;
+}
+
+
+
 
 
 
@@ -43,7 +54,7 @@
 
 .twitter:hover {
     color: rgb(46, 187, 243);
-    
+
 }
 
 .insta:hover {

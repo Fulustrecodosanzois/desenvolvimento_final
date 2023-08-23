@@ -11,7 +11,7 @@
   <title>Hotel</title>
 </head>
 
-<body class="fundo2 borda">
+<body class="fundo2">
   <!-- NAVBAR -->
 
   <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
@@ -21,17 +21,16 @@
 
     <nav class="container navbar navbar-expand-lg bg-body-primary">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="../index.html"><img src="#" alt="LO" /></a>
+        <a class="navbar-brand" href="index.html"><img src="#" alt="LO" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end align-content-sm-center gap-3" id="navbarNav">
-          <button type="button" src="pages/sobre.html" class="btn btn-danger px-3">
-            Sobre
-          </button>
-          <button type="button" class="btn btn-danger px-3">Contato</button>
-          <button type="button" class="btn btn-danger px-3">Sobre</button>
+        <div class="collapse navbar-collapse justify-content-lg-end gap-3" id="navbarNav">
+          <div class="text-center">
+            <a class="btn btn-danger px-3 me-3" href="">Contato</a>
+            <a class="btn btn-danger px-3" href="">Sobre</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -40,51 +39,101 @@
   <!-- ----------------------------------------------------------------- MAIN -->
 
   <main class="">
-    <section class="container col-6 my-4">
-      <h2 class="text-center mb-3">Confirme as informações</h2>
+    <section class="container my-4 col-lg-12 col-10">
+      
+      <h2 class="text-center mb-3 linha">Confirme as informações</h2>
+
+      <hr class="linha my-4">
 
       <!-- ----------------------------------------------------------FORMAS DE PAGAMENTO -->
-
-      <table class="container table table-borderless">
-        <thead class="">
-          <tr>
-            <th scope="col">Nome</th>
-            <td scope="col" class="text-end border-end">Fulano</td>
-            <th scope="col" class="text-end">Forma de Pagamento</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Telefone</th>
-            <td class="text-end  border-end">(98) 9 9999 9999</td>
-            <td class="text-end"><i class="fa-brands fa-cc-visa me-2" style="color: #164dac;"></i>Cartão de Crédito</td>
-          </tr>
-
-          <tr>
-            <th scope="row">Email</th>
-            <td class="text-end border-end">Fulano@gogres.com</td>
-            <td class="text-end">36x</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Código de Reserva</th>
-            <td class="text-end border-end">001</td>
-            <td class="text-end fw-bold">Total: R$ 99,00</td>
-          </tr>
-
-        </tbody>
-      </table>
-
       <!-- ---------------------------------------------------------CARD DO QUARTO -->
 
-      <div class="card mt-4" style="max-width: 800px">
+      <div class="row justify-content-lg-center">
+        <div class="col-lg-5">
+          <h4 class="linha">Dados Do Hospede</h4>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Código da Reserva</li>
+            <li class="list-group-item text-center w-50">001</li>
+          </ul> 
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Nome</li>
+            <li class="list-group-item text-center w-50">John Doe</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Email</li>
+            <li class="list-group-item text-center w-50">john@example.com</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Telefone</li>
+            <li class="list-group-item text-center w-50">(98) 4565-7890</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Endereço</li>
+            <li class="list-group-item text-center w-50">Rua 2 Casa x</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Data de Nascimento</li>
+            <li class="list-group-item text-center w-50">20/09/23</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Tipo de Quarto</li>
+            <li class="list-group-item text-center w-50">Solteiro</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Quantidade de Pessoas</li>
+            <li class="list-group-item text-center w-50">3</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Tipo de Quarto</li>
+            <li class="list-group-item text-center w-50">Solteiro</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Check-out</li>
+            <li class="list-group-item text-center w-50">20/09/23</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Check-in</li>
+            <li class="list-group-item text-center w-50">20/09/23</li>
+          </ul>
+
+
+
+        </div>
+
+        <div class="col-lg-5 mt-lg-0 mt-4">
+          <h4 class="linha">Dados Do Cartão</h4>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Número do Cartão</li>
+            <li class="list-group-item text-center w-50">0000 0000 0000 0000</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Validade</li>
+            <li class="list-group-item text-center w-50">08/23</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Parcelas</li>
+            <li class="list-group-item text-center w-50">36x</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Forma de Pagamento</li>
+            <li class="list-group-item text-center w-50"><i class="fa-brands fa-cc-visa" style="color: #537fca;"></i> Cartão</li>
+          </ul>
+          <ul class="list-group-horizontal list-group">
+            <li class="list-group-item linha fw-bolder w-50">Valor Total</li>
+            <li class="list-group-item text-center w-50 fonte2 lead">R$ 150</li>
+          </ul>
+        </div>
+      
+      </div>
+      
+
+      <!-- <div class="card mt-4">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="../image/cards_quarto/quarto1.jpg" class="img-fluid h-100" alt="..." />
           </div>
           <div class="col-md-6">
-            <div class="card-body border-end">
+            <div class="card-body border-end text-center">
               <h5 class="card-title">Solteiro</h5>
               <div class="">
                 <i class="fa-solid fa-check" style="color: #0bc10e;"></i> Cama Confortável<br>
@@ -96,7 +145,7 @@
                 <i class="fa-solid fa-check" style="color: #0bc10e;"></i> Cofre<br>
               </div>
             </div>
-            <div class="d-flex justify-content-around col-7">
+            <div class="d-flex justify-content-around">
               <div class="mt-2">
                 <i class="fa-solid fa-bed" style="color: #1d5cc2;"></i>
                 <label for=""> 2</label>
@@ -115,14 +164,15 @@
 
           <div class="col-md-2 d-flex flex-column justify-content-between align-items-center ">
             <div class="mt-2 ">
-              <h5 class="price preco"><i class="fa-solid fa-brazilian-real-sign fs-5"></i> 99.99</h5>
+              <p class="fonte2"><i class="fa-solid fa-brazilian-real-sign fs-5 "></i> 99.99</p>
             </div>
 
           </div>
         </div>
-      </div>
-      <div class="text-center mt-4">
-        <a class="btn btn-danger w-25 p-2" type="submit" href="confirmacao.html">Confirmar</a>
+      </div> -->
+
+      <div class="text-center mt-5">
+        <a class="btn btn-danger px-5" type="submit" href="confirmacao.html">Confirmar</a>
       </div>
 
 
