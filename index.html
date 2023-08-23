@@ -1,303 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/staly.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
 
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/staly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <body class="fundo2">
+  <title>Document</title>
+</head>
 
-    <!-- NAVBAR -->
+<body class="fundo2">
 
-    <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
-      <!-- --------------------------------------------------------NAVBAR -->
+  <!-- NAVBAR -->
 
-      <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
+  <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
+    <!-- --------------------------------------------------------NAVBAR -->
 
-      <nav class="container navbar navbar-expand-lg bg-body-primary">
-        <div class="container-fluid d-flex">
-          <a class="navbar-brand" href="index.html"><img src="#" alt="LO" /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end align-content-sm-center gap-3"
-            id="navbarNav"
-          >
-            <button type="button" src="pages/sobre.html" class="btn btn-danger px-3">Sobre</button>
-            <button type="button" class="btn btn-danger px-3">Contato</button>
-            <button type="button" class="btn btn-danger px-3">Sobre</button>
+    <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
+
+    <nav class="container navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="index.html"><img src="#" alt="LO" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end gap-3" id="navbarNav">
+          <div class="text-center">
+            <a class="btn btn-danger px-3 me-3" href="">Contato</a>
+            <a class="btn btn-danger px-3" href="">Sobre</a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- ------------------------------------------------CARROSSEL -->
+  <!-- ------------------------------------------------CARROSSEL -->
 
-    <!-- foi usado data-bs-interval="2500" para definir o tempo de exibição dos slides -->
+  <!-- foi usado data-bs-interval="2500" para definir o tempo de exibição dos slides -->
 
-    <section class="container-fluid mb-5 py-4 shadow">
+  <section class="container-fluid mb-5 py-4 shadow">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2500">
+          <img src="image/Carrossel/cafe_manha.jpeg" class="d-block w-100" alt="imagem de cafe da manha" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="image/Carrossel/cama.jpeg" class="d-block w-100" alt="imagem de um quarto de hotel" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="image/Carrossel/pet.jpeg" class="d-block w-100" alt="imagem de um cachorro" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="image/Carrossel/wifi.jpeg" class="d-block w-100" alt="imagme das comodidades" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------- MAIN -->
+
+
+
+  <main class="container-fluid col-10">
+
+    <!-- ---------------------------------------------------------------- ARTIGO -->
+
+    <article class="d-flex flex-md-column flex-column gap-5 flex-lg-row">
       <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2500">
-            <img
-              src="image/Carrossel/cafe_manha.jpeg"
-              class="d-block w-100"
-              alt="imagem de cafe da manha"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="image/Carrossel/cama.jpeg"
-              class="d-block w-100"
-              alt="imagem de um quarto de hotel"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="image/Carrossel/pet.jpeg"
-              class="d-block w-100"
-              alt="imagem de um cachorro"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="image/Carrossel/wifi.jpeg"
-              class="d-block w-100"
-              alt="imagme das comodidades"
-            />
-          </div>
+        class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3 order-md-2 order-2 order-lg-1">
+        <div class="lead">
+          <img src="image/main/imagem_linha.jpg" alt="imagem de do pordo sol do hotel"
+            class="w-100 rounded-5 rounded-top-1 shadow border border-warning-subtle" />
+          <h1 class="text-center my-3">
+            O Refúgio Perfeito para sua Famílias e Seus Adoráveis Pets!
+          </h1>
+          <p class="px-4 lead text-center mt-4">Embarquem em uma jornada única de férias no Nosso Hotel, onde a
+            alegria das suas férias encontra o aconchego de um lar. Aqui, abraçamos
+            não apenas você, mas também os seus companheiros peludos
+            de quatro patas. Das nossas acomodações confortáveis às atividades
+            emocionantes, cada detalhe foi cuidadosamente elaborado para
+            garantir que cada membro da sua família, incluindo aqueles de
+            caudas fofas, tenha uma estadia inesquecível. Estamos ansiosos
+            para criar momentos especiais juntos!</p>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
       </div>
-    </section>
 
-    <!-- ----------------------------------------------------------------- MAIN -->
+      <!-- --------------------------------------------------Filtro de pesquisa -->
 
-   
-
-    <main class="container-fluid col-10">
-
-      <!-- ---------------------------------------------------------------- ARTIGO -->
-
-      <article class="d-flex flex-md-column flex-column gap-4 flex-lg-row">
-        <div class="container col-lg-7 d-flex text-start text-light rounded-5 rounded-top-1 shadow fundo p-3 order-md-2 order-2 order-lg-1">
-          <div class="lead">
-            <img
-              src="image/main/imagem_linha.jpg"
-              alt="imagem de do pordo sol do hotel"
-              class="w-100 rounded-5 rounded-top-1 shadow border border-warning-subtle"
-            />
-            <h1 class="text-center my-3">
-              O Refúgio Perfeito para sua Famílias e Seus Adoráveis Pets!
-            </h1>
-            <p class="px-4 lead text-center mt-4"
-              >Embarquem em uma jornada única de férias no Nosso Hotel, onde a
-              alegria das suas férias encontra o aconchego de um lar. Aqui, abraçamos
-              não apenas você, mas também os seus companheiros peludos
-              de quatro patas. Das nossas acomodações confortáveis às atividades
-              emocionantes, cada detalhe foi cuidadosamente elaborado para
-              garantir que cada membro da sua família, incluindo aqueles de
-              caudas fofas, tenha uma estadia inesquecível. Estamos ansiosos
-              para criar momentos especiais juntos!</p
-            >
+      <div class="container col-lg-4 fundo p-4 rounded-4 order-md-1 order-lg-2 order-1 shadow">
+        <form class="mt-4 gap-5">
+          <div class="form-floating mb-4">
+            <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Entrada</label>
           </div>
-        </div>
+          <div class="form-floating mb-4">
+            <input type="date" class="form-control" id="" placeholder="" />
+            <label for="floatingPassword">Saída</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" id="irresponsaveis" placeholder="" />
+            <label for="floatingPassword" min="1" max="10">N° de Adultos</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" id="pirralhos" placeholder="" />
+            <label for="floatingPassword">N° de Crianças</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" id="" placeholder="" />
+            <label for="floatingPassword">N° de Quartos</label>
+          </div>
+          <div class="form-control mb-3 d-flex justify-content-between align-content-center">
+            <label class="form-label" for="flexSwitchCheckChecked">Pets</label>
+            <div class="form-switch d-flex align-content-center">
 
-        <!-- --------------------------------------------------Filtro de pesquisa -->
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" />
 
-        <div class="container col-lg-4 fundo p-4 rounded-4 order-md-1 order-lg-2 order-1 shadow">
-          <form class="mt-4 gap-5">
-            <div class="form-floating mb-4">
-              <input
-                type="date"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Entrada</label>
-            </div>
-            <div class="form-floating mb-4">
-              <input type="date" class="form-control" id="" placeholder="" />
-              <label for="floatingPassword">Saída</label>
-            </div>
-            <div class="form-floating mb-4">
-              <input
-                type="number"
-                class="form-control"
-                id="irresponsaveis"
-                placeholder=""
-              />
-              <label for="floatingPassword" min="1" max="10"
-                >N° de Adultos</label
-              >
-            </div>
-            <div class="form-floating mb-4">
-              <input
-                type="number"
-                class="form-control"
-                id="pirralhos"
-                placeholder=""
-              />
-              <label for="floatingPassword">N° de Crianças</label>
-            </div>
-            <div class="form-floating mb-4">
-              <input type="number" class="form-control" id="" placeholder="" />
-              <label for="floatingPassword">N° de Quartos</label>
-            </div>
-              <div class="form-control mb-3 d-flex justify-content-between align-content-center">
-                <label class="form-label" for="flexSwitchCheckChecked">Pets</label>
-                <div class="form-switch d-flex align-content-center">
-                  
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckChecked"
-                  />
-                  
-                </div>
-              </div>
-            <div class="container mt-4">
-              <button class="btn btn-secondary w-100" type="submit">
-                  <a href="pages/reserva.html" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Pesquisar</a>
-              </button>
-            </div>
-          </form>
-        </div>
-      </article>
-
-    </main>
-
-
-    <!-- --------------------------------------------------------CARDS -->
-
-    <section class="my-5">
-
-      <div class="d-flex flex-wrap justify-content-center gap-4">
-        <div class="col-10 col-md-3  col-sm-10">
-          <div class="card h-100 rounded-5 rounded-top-1 shadow">
-            <img src="image/cards/familia1.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
-            <div class="card-body">
-              <h5 class="card-title px-3">Família Albuquerque</h5>
-              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>O Hotel superou todas as nossas expectativas. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e atividades para todas as idades. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
-            </div>
-            <div class="rating text-center">
-              <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
-              <span class="text-warning star">★★★★★</span>
             </div>
           </div>
-        </div>
-
-        <div class="col-10 col-md-3 col-sm-3  col-sm-10">
-          <div class="card h-100 rounded-5 rounded-top-1 shadow">
-            <img src="image/cards/familia2.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
-            <div class="card-body">
-              <h5 class="card-title px-3">Família Monteiro</h5>
-              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Tivemos férias incríveis no Hotel Pet-Friendly! Quartos espaçosos para a família e nossos pets, equipe super atenciosa. Áreas para pets, piscinas e diversão para todos. Com certeza voltaremos!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
-            </div>
-            <div class="rating text-center">
-              <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
-              <span class="text-warning star">★★★★☆</span>
-            </div>
+          <div class="container mt-4">
+            <button class="btn btn-secondary w-100" type="submit">
+              <a href="pages/reserva.html"
+                class="link-offset-2 link-underline link-underline-opacity-0 text-white">Pesquisar</a>
+            </button>
           </div>
-        </div>
+        </form>
+      </div>
+    </article>
 
-        <div class="col-10 col-md-3 col-sm-3  col-sm-10">
-          <div class="card h-100 rounded-5 rounded-top-1 shadow">
-            <img src="image/cards/familia3.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
-            <div class="card-body">
-              <h5 class="card-title px-3">Família Carvalho</h5>
-              <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Estadia memorável! Quartos aconchegantes, estrutura com áreas verdes para atividades com os animais. Hospedagem perfeita para famílias que amam seus pets. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
-            </div>
-            <div class="rating text-center">
-              <!-- <span class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> -->
-              <span class="text-warning star">★★★★☆</span>
-            </div>
+  </main>
+
+
+  <!-- --------------------------------------------------------CARDS -->
+
+  <section class="my-5">
+
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <div class="col-10 col-md-3  col-sm-10">
+        <div class="card h-100 rounded-5 rounded-top-1 shadow">
+          <img src="image/cards/familia1.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
+          <div class="card-body">
+            <h5 class="card-title px-3">Família Albuquerque</h5>
+            <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>O Hotel superou
+              todas as nossas expectativas. Funcionários acolhedores, quartos incríveis com vistas deslumbrantes e
+              atividades para todas as idades. Mal podemos esperar para voltar!<i class="fa-solid fa-quote-right px-2"
+                style="color: #c8c9cb;"></i></p>
+          </div>
+          <div class="rating text-center">
+            <span class="text-warning star">★★★★★</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <footer class="container-fluid p-5 border-top fundo border-warning">
-      <section class="container d-flex justify-content-between">
-        <small class="text-white text-center mt-2 mx-3"
-          >Todos os direitos reservados &copy; 2023</small
-        >
-
-        <!---------------------------------------------- ÍCONES REDES SOCIAIS -->
-
-        <div class="fs-4 d-flex gap-4">
-          <a href="https://www.youtube.com/" target="_blank" class="text-white"
-            ><i class="fa-brands fa-youtube tube"></i
-          ></a>
-          <a
-            href="https://twitter.com/i/flow/login?redirect_after_login=%2F"
-            target="_blank"
-            class="text-white"
-            ><i class="fa-brands fa-twitter twitter"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            class="text-white"
-            ><i class="fa-brands fa-instagram insta"></i
-          ></a>
-          <a
-            href="https://www.tiktok.com/pt-BR/"
-            target="_blank"
-            class="text-white"
-            ><i class="fa-brands fa-tiktok tiktok"></i
-          ></a>
-          <a href="https://www.facebook.com/" target="_blank" class="text-white"
-            ><i class="fa-brands fa-facebook face"></i
-          ></a>
+      <div class="col-10 col-md-3 col-sm-3  col-sm-10">
+        <div class="card h-100 rounded-5 rounded-top-1 shadow">
+          <img src="image/cards/familia2.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
+          <div class="card-body">
+            <h5 class="card-title px-3">Família Monteiro</h5>
+            <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Tivemos férias
+              incríveis no Hotel Pet-Friendly! Quartos espaçosos para a família e nossos pets, equipe super atenciosa.
+              Áreas para pets, piscinas e diversão para todos. Com certeza voltaremos!<i
+                class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
+          </div>
+          <div class="rating text-center">
+            <span class="text-warning star">★★★★☆</span>
+          </div>
         </div>
-      </section>
-    </footer>
+      </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="col-10 col-md-3 col-sm-3  col-sm-10">
+        <div class="card h-100 rounded-5 rounded-top-1 shadow">
+          <img src="image/cards/familia3.jpg" class="card-img-top img-thumbnail" alt="foto de familia">
+          <div class="card-body">
+            <h5 class="card-title px-3">Família Carvalho</h5>
+            <p class="card-text px-3"><i class="fa-solid fa-quote-left px-2" style="color: #c8c9cb;"></i>Estadia
+              memorável! Quartos aconchegantes, estrutura com áreas verdes para atividades com os animais. Hospedagem
+              perfeita para famílias que amam seus pets. Mal podemos esperar para voltar!<i
+                class="fa-solid fa-quote-right px-2" style="color: #c8c9cb;"></i></p>
+          </div>
+          <div class="rating text-center">
+            <span class="text-warning star">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid p-5 border-top fundo border-warning">
+    <section class="container d-flex justify-content-between flex-wrap">
+      <div class="borda">
+        <small class="text-white text-center mt-2 mx-3">Todos os direitos reservados &copy; 2023</small>
+      </div>
+
+      <!---------------------------------------------- ÍCONES REDES SOCIAIS -->
+
+      <div class="fs-4 d-flex gap-4">
+        <a href="https://www.youtube.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-youtube tube"></i></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" target="_blank" class="text-white"><i
+            class="fa-brands fa-twitter twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-instagram insta"></i></a>
+        <a href="https://www.tiktok.com/pt-BR/" target="_blank" class="text-white"><i
+            class="fa-brands fa-tiktok tiktok"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-facebook face"></i></a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
