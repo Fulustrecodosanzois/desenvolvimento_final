@@ -21,15 +21,14 @@
 
     <nav class="container navbar navbar-expand-lg bg-body-primary">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="index.html"><img src="#" alt="LO" /></a>
+        <a class="navbar-brand" href="../index.html"><img src="#" alt="LO" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-lg-end gap-3" id="navbarNav">
-          <div class="text-center">
-            <a class="btn btn-danger px-3 me-3" href="">Contato</a>
-            <a class="btn btn-danger px-3" href="">Sobre</a>
+          <div class="text-center mt-4 mt-lg-0">
+            <a class="btn btn-danger px-3 me-3 w-100" href="sobre.html">Sobre</a>
           </div>
         </div>
       </div>
@@ -45,25 +44,35 @@
     <section class="container p-5 fundo-form text-light rounded-5">
 
         <!-- ---------------------------------------------------- FORMULÁRIO -->
+      <h3 class="linha text-center mb-3">Check-out</h3>
+      <h6 class="linha text-center mb-3">Preencha o formulário de cadastro abaixo</h6>
+      <form action="borda">
 
-      <form action="">
-        <h3 class="linha text-center mb-3">Check-out</h3>
-        <h6 class="linha text-center mb-3">Preencha o formulário de cadastro abaixo</h6>
-        <div class="input-group">
-          <span class="input-group-text fundo text-light">Nome Completo</span>
-          <input type="text" class="form-control">
-        </div>
-        <div class="input-group my-2">
-          <span class="input-group-text fundo text-light">Telefone</span>
-          <input type="tel" class="form-control" placeholder="(99) 9 9999-9999">
+        <div class="p-3 fundo2 rounded">
+          <div class="input-group">
+            <span class="input-group-text fundo text-light">Nome Completo</span>
+            <input type="text" class="form-control">
+          </div>
+          <div class="input-group my-2">
+            <span class="input-group-text fundo text-light">Telefone</span>
+            <input type="tel" class="form-control" placeholder="(99) 9 9999-9999">
+            <span class="input-group-text fundo text-light ms-3 rounded">Data Nascimento</span>
+            <input type="date" class="form-control">
+          </div>
+
+          <div class="input-group col-2">
+            <span class="input-group-text fundo text-light">Email</span>
+            <input type="text" class="form-control" aria-label="Username">
+            <span class="input-group-text fundo text-light">@</span>
+            <input type="text" class="form-control" placeholder="Ex: hotmail.com">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-text fundo text-light">Endereço</span>
+            <input type="text" class="form-control">
+          </div>
+
         </div>
 
-        <div class="input-group col-2">
-          <span class="input-group-text fundo text-light">Email</span>
-          <input type="text" class="form-control" aria-label="Username">
-          <span class="input-group-text fundo text-light">@</span>
-          <input type="text" class="form-control" placeholder="Ex: hotmail.com">
-        </div>
       </form>
 
       <hr class="linha my-4">
@@ -100,7 +109,7 @@
               </div>
               <div class="col-md-2 d-flex flex-column justify-content-between align-items-center">
                 <div class="mt-2">
-                  <h5 class="price preco"><i class="fa-solid fa-brazilian-real-sign fs-5 my-3"></i>R$ 150</h5>
+                  <h5 class="price preco"><i class="fa-solid fa-brazilian-real-sign my-3"></i> 150</h5>
                 </div>
               </div>
   
@@ -108,9 +117,9 @@
           </div>
         </section>
 
-        <!-- ------------------------------------------------- CARD CARTÃO -->
+        <!-- -------------------------------------------------CARTÃO DE CRÉDITO-->
 
-        <section class="container col-lg-5 p-5 fundo-form text-light rounded-5">
+        <section class="container col-lg-5 text-light rounded-5 mt-3">
           <h3 class="linha border-warning mb-3">Cartão de Crédito</h3>
           <div class="mb-3">
             <span class="input-group-text fundo text-light">Número do Cartão</span>
@@ -130,70 +139,21 @@
             </div>
 
           </div>
-
-
         </section>
-
       </div>
-
-
-
-      <div class="text-center">
+      <div class="text-center mt-4">
         <a class="btn btn-danger w-25 p-2" type="submit" href="finalizar.html">Confirmar</a>
       </div>
-
-      
-
-
-      
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-------------------------------------------------------------------- RODAPÉ   -->
 
   <footer class="container-fluid p-5 border-top fundo border-warning">
-    <section class="container d-flex justify-content-between">
-      <small class="text-white text-center mt-2 mx-3">Todos os direitos reservados &copy; 2023</small>
+    <section class="mx-lg-5 d-flex justify-content-lg-between justify-content-center gap-lg-0 gap-3 flex-wrap">
+      <div class="">
+        <small class="text-white text-center mt-2 mx-3">Todos os direitos reservados &copy; 2023</small>
+      </div>
 
       <!---------------------------------------------- ÍCONES REDES SOCIAIS -->
 

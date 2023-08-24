@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/staly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <title>Hotel</title>
+</head>
+
+<body class="fundo2">
+  <!-- NAVBAR -->
+
+  <header class="container-fluid bg-body-primary fundo py-3 border-bottom border-warning">
+    <!-- --------------------------------------------------------NAVBAR -->
+
+    <!-- Adicionamos d-flex na tag mãe e justify-content-end na div de botões para que se ajuste ao lado direito do navbar -->
+
+    <nav class="container navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="../index.html"><img src="#" alt="LO" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end gap-3" id="navbarNav">
+          <div class="text-center">
+            <a class="btn btn-danger px-3 me-3" href="">Contato</a>
+            <a class="btn btn-danger px-3" href="">Sobre</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ----------------------------------------------------------------- MAIN -->
+
+  <main class="">
+    <section class="container">
+        <h4 class="linha">Dados Do Hospede</h4>
+        <div class="row">
+            <div class="col-lg-5 dados-hospede">
+                
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Código da Reserva</li>
+                <li class="list-group-item text-center w-50" id="cod-reserva">Carregando...</li>
+                </ul> 
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Nome</li>
+                <li class="list-group-item text-center w-50" id="nome">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Email</li>
+                <li class="list-group-item text-center w-50" id="email">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Telefone</li>
+                <li class="list-group-item text-center w-50" id="tel">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Endereço</li>
+                <li class="list-group-item text-center w-50" id="endereco">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Data de Nascimento</li>
+                <li class="list-group-item text-center w-50" id="nasc">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Tipo de Quarto</li>
+                <li class="list-group-item text-center w-50" id="tipo_quarto">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Quantidade de Pessoas</li>
+                <li class="list-group-item text-center w-50" id="pessoas">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-in</li>
+                <li class="list-group-item text-center w-50" id="in">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-out</li>
+                <li class="list-group-item text-center w-50" id="out">Carregando...</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-5 dados-hospede">
+                
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Código da Reserva</li>
+                <li class="list-group-item text-center w-50" id="cod-reserva">Carregando...</li>
+                </ul> 
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Nome</li>
+                <li class="list-group-item text-center w-50" id="nome">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Email</li>
+                <li class="list-group-item text-center w-50" id="email">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Telefone</li>
+                <li class="list-group-item text-center w-50" id="tel">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Endereço</li>
+                <li class="list-group-item text-center w-50" id="endereco">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Data de Nascimento</li>
+                <li class="list-group-item text-center w-50" id="nasc">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Tipo de Quarto</li>
+                <li class="list-group-item text-center w-50" id="tipo_quarto">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Quantidade de Pessoas</li>
+                <li class="list-group-item text-center w-50" id="pessoas">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-in</li>
+                <li class="list-group-item text-center w-50" id="in">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-out</li>
+                <li class="list-group-item text-center w-50" id="out">Carregando...</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-5 dados-hospede">
+                
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Código da Reserva</li>
+                <li class="list-group-item text-center w-50" id="cod-reserva">Carregando...</li>
+                </ul> 
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Nome</li>
+                <li class="list-group-item text-center w-50" id="nome">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Email</li>
+                <li class="list-group-item text-center w-50" id="email">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Telefone</li>
+                <li class="list-group-item text-center w-50" id="tel">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Endereço</li>
+                <li class="list-group-item text-center w-50" id="endereco">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Data de Nascimento</li>
+                <li class="list-group-item text-center w-50" id="nasc">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Tipo de Quarto</li>
+                <li class="list-group-item text-center w-50" id="tipo_quarto">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Quantidade de Pessoas</li>
+                <li class="list-group-item text-center w-50" id="pessoas">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-in</li>
+                <li class="list-group-item text-center w-50" id="in">Carregando...</li>
+                </ul>
+                <ul class="list-group-horizontal list-group">
+                <li class="list-group-item linha fw-bolder w-50">Check-out</li>
+                <li class="list-group-item text-center w-50" id="out">Carregando...</li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </section>
+
+  </main>
+
+  <!-------------------------------------------------------------------- RODAPÉ   -->
+
+  <footer class="container-fluid p-5 border-top fundo border-warning">
+    <section class="container d-flex justify-content-between">
+      <small class="text-white text-center mt-2 mx-3">Todos os direitos reservados &copy; 2023</small>
+
+      <!---------------------------------------------- ÍCONES REDES SOCIAIS -->
+
+      <div class="fs-4 d-flex gap-4">
+        <a href="https://www.youtube.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-youtube tube"></i></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" target="_blank" class="text-white"><i
+            class="fa-brands fa-twitter twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-instagram insta"></i></a>
+        <a href="https://www.tiktok.com/pt-BR/" target="_blank" class="text-white"><i
+            class="fa-brands fa-tiktok tiktok"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
+            class="fa-brands fa-facebook face"></i></a>
+      </div>
+    </section>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="../js/api2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
